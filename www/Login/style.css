@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com');
+
+/* Fundo laranja para toda a página */
+body {
+  margin: 0;
+  background-color: #fd9c00; /* fundo laranja */
+  font-family: 'Montserrat', Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;  /* centraliza horizontal */
+  align-items: flex-end;    /* alinha na parte inferior */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Card branco com cantos arredondados só no topo */
+.container {
+  background-color: white;
+  width: 100%;
+  max-width: 400px;   /* largura máxima para celular */
+  height: 85vh;       /* altura do card */
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 60px 25px 30px; /* Padding superior aumentado para descer a logo */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;  /* permite scroll vertical se necessário */
+}
+
+/* Cabeçalho com logo */
+.header {
+  flex-shrink: 0;
+  text-align: center;
+  margin-bottom: 40px; /* Aumentado para dar mais espaço abaixo da logo */
+}
+
+/* Logo com tamanho maior */
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+/* Conteúdo do card */
+.content {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+/* Centraliza o título H2 */
+.content h2 {
+  text-align: center;
+  margin-bottom: 10px; /* Adiciona um pequeno espaço abaixo do título */
+}
+
+/* Ajuste para o parágrafo de instrução - AGORA CENTRALIZADO */
+.content p {
+    margin-bottom: 30px; 
+    text-align: center; /* Centraliza o texto do parágrafo */
+}
+
+/* Grupos de inputs */
+.input-group {
+  margin-bottom: 25px; /* Aumentado o espaço entre os grupos de input */
+}
+
+.input-group label {
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Botões principais */
+button {
+  background-color: #fd9c00;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 25px; /* Aumentado o espaço acima do botão */
+  width: 100%;
+  transition: opacity 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Texto do rodapé com links */
+.footer-text {
+  font-size: 13px;
+  margin-top: 30px; /* Aumentado o espaço acima do texto "Não recebeu?" */
+  text-align: center;
+}
+
+.footer-text a {
+  color: #fd9c00;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: poi
+}
